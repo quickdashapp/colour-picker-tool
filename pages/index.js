@@ -31,7 +31,7 @@ export default function App() {
 
 	const reactElementsArray = colourHarmonizerOutput.map((data) => {
 		return (
-			<Grid item xs={8}>
+			<Grid item xs={8} key={data}>
 				<div alignItems="center" style={{ marginBottom: 50, marginLeft: 100 }}>
 					<Card style={{ backgroundColor: `${data}`, height: 100 }}></Card>
 
