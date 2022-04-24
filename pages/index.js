@@ -31,7 +31,7 @@ export default function App() {
 
 	const reactElementsArray = colourHarmonizerOutput.map((data) => {
 		return (
-			<Grid item xs={8} key={data}>
+			<Grid item sm={12} key={data}>
 				<div alignItems="center" style={{ marginBottom: 50, marginLeft: 100 }}>
 					<Card style={{ backgroundColor: `${data}`, height: 100 }}></Card>
 
@@ -88,7 +88,7 @@ export default function App() {
 			justifyContent="center"
 			style={{ minHeight: "100vh" }}
 		>
-			<Grid item xs={3} alignItems="center" justifyContent="center">
+			<Grid item sm={3} alignItems="center" justifyContent="center">
 				<Card
 					style={{
 						padding: 10,
@@ -123,12 +123,6 @@ export default function App() {
 									height: 300,
 								}}
 							/>
-
-							{/* <div className="buttons">
-							<button onClick={() => setColor("#c6ad23")}>Choose gold</button>
-							<button onClick={() => setColor("#556b2f")}>Choose green</button>
-							<button onClick={() => setColor("#207bd7")}>Choose blue</button>
-						</div> */}
 
 							<FormControl style={{ marginTop: 50 }} fullWidth>
 								<InputLabel htmlFor="component-outlined">Hex Code</InputLabel>
@@ -170,7 +164,13 @@ export default function App() {
 					</Grid>
 				</Card>
 			</Grid>{" "}
-			<Grid item xs={3} alignItems="center" justifyContent="center">
+			<Grid
+				item
+				sm={3}
+				alignItems="center"
+				justifyContent="center"
+				style={{ marginTop: 50, marginBottom: 50 }}
+			>
 				{reactComponent(reactElementsArray)}
 			</Grid>
 		</Grid>
