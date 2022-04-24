@@ -22,7 +22,7 @@ export default function App() {
 		setColourCombination(event.target.value);
 	};
 
-	var Harmonizer = require("Color-harmony").Harmonizer;
+	var Harmonizer = require("color-harmony").Harmonizer;
 	var harmonizer = new Harmonizer();
 	harmonizer.add("anal-og", [-30, 0, 30, 60, 90]);
 
